@@ -18,7 +18,7 @@ public class HojaTrabajo3 {
      */
     public static void main(String[] args) throws FileNotFoundException, IOException {
         // TODO code application logic here
-        
+        int[] arreglo = new int[2999];
         try{
             File archivo = new File("C:\\Users\\uriel\\Desktop\\UVG\\Algoritmos y Estruct. Datos\\Hojas de Trabajo\\HT3\\numeros.txt");
             FileWriter escribir = new FileWriter (archivo);
@@ -40,12 +40,14 @@ public class HojaTrabajo3 {
 
             //El contenido de lector se guarda en un BufferedReader
             BufferedReader contenido=new BufferedReader(lector);
-    
+            int contador = 0;
             //Con el siguiente ciclo extraemos todo el contenido del objeto "contenido" y lo mostramos
             while((conten =contenido.readLine())!=null)
             {
+                
                 int numerico = Integer.parseInt(conten);
-                System.out.println(numerico);
+                arreglo[contador] = numerico;
+                contador = contador + 1;   
             }
         }
         //Si se causa un error al leer cae aqui
@@ -53,6 +55,19 @@ public class HojaTrabajo3 {
         {
             System.out.println("Error al leer");
         }
+        int [] copia = new int[2999];
+        copia = arreglo;
+        int [] copia1 = new int[2999];
+        copia1 = arreglo;
+        int [] copia2 = new int[2999];
+        copia2 = arreglo;
+        int [] copia3 = new int[2999];
+        copia3 = arreglo;
+        int [] copia4 = new int[2999];
+        copia4 = arreglo;
+        GnomeSort.gnomeSort(arreglo);
+        GnomeSort.gnomeSort(arreglo);
+        
     }
     
 }
