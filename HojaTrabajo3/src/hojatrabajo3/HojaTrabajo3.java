@@ -33,7 +33,7 @@ public class HojaTrabajo3 {
         }catch(Exception e){
             System.out.println("Error al escribir"); 
         }
-        String conten;
+        String conten; //Variable que va a recibir el contenido de cada linea del texto
         try{
         //Creamos un archivo FileReader que obtiene lo que tenga el archivo
             FileReader lector=new FileReader("C:\\Users\\uriel\\Desktop\\UVG\\Algoritmos y Estruct. Datos\\Hojas de Trabajo\\HT3\\numeros.txt");
@@ -44,7 +44,8 @@ public class HojaTrabajo3 {
             //Con el siguiente ciclo extraemos todo el contenido del objeto "contenido" y lo mostramos
             while((conten =contenido.readLine())!=null)
             {
-                System.out.println(conten);
+                int numerico = Integer.parseInt(conten);
+                System.out.println(numerico);
             }
         }
         //Si se causa un error al leer cae aqui
