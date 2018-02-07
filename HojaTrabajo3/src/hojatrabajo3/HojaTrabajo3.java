@@ -18,14 +18,14 @@ public class HojaTrabajo3 {
      */
     public static void main(String[] args) throws FileNotFoundException, IOException {
         // TODO code application logic here
-        int[] arreglo = new int[2999];
+        int[] arreglo = new int[19999];
         try{
             File archivo = new File("C:\\Users\\uriel\\Desktop\\UVG\\Algoritmos y Estruct. Datos\\Hojas de Trabajo\\HT3\\numeros.txt");
             FileWriter escribir = new FileWriter (archivo);
             BufferedWriter bw = new BufferedWriter(escribir);
             bw.write("");
             
-            for(int i = 0; i < 2999; i++){
+            for(int i = 0; i < 19999; i++){
                 int aleatorio = (int)(Math.random()*1000);
                 escribir.write(String.valueOf(aleatorio)+"\n");
             }
@@ -56,17 +56,17 @@ public class HojaTrabajo3 {
             System.out.println("Error al leer");
         }
         //COPIAS DEL ARREGLO DESORDENADO PARA PODER PROBAR CON CADA SORT
-        int [] copia = new int[2999];
+        int [] copia = new int[19999];
         copia = arreglo;
-        int [] copia1 = new int[2999];
+        int [] copia1 = new int[19999];
         copia1 = arreglo;
-        int [] copia2 = new int[2999];
+        int [] copia2 = new int[19999];
         copia2 = arreglo;
-        int [] copia3 = new int[2999];
+        int [] copia3 = new int[19999];
         copia3 = arreglo;
-        int [] copia4 = new int[2999];
+        int [] copia4 = new int[19999];
         copia4 = arreglo;
-        
+        //Aplcar los metodos
         MergeSort.mergesort(copia);
         GnomeSort.gnomeSort(arreglo);
     }
