@@ -55,6 +55,7 @@ public class HojaTrabajo3 {
         {
             System.out.println("Error al leer");
         }
+        //COPIAS DEL ARREGLO DESORDENADO PARA PODER PROBAR CON CADA SORT
         int [] copia = new int[2999];
         copia = arreglo;
         int [] copia1 = new int[2999];
@@ -65,9 +66,9 @@ public class HojaTrabajo3 {
         copia3 = arreglo;
         int [] copia4 = new int[2999];
         copia4 = arreglo;
-        GnomeSort.gnomeSort(arreglo);
-        GnomeSort.gnomeSort(arreglo);
         
+        MergeSort.mergesort(copia);
+        GnomeSort.gnomeSort(arreglo);
     }
     
 }
