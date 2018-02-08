@@ -7,7 +7,7 @@ package hojatrabajo3;
 
 /**
  *
- * @author David
+ * @author David Soto y Jose Cifuntes
  */
 import java.io.*;
 

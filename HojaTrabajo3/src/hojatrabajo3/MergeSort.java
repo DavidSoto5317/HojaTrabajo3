@@ -3,8 +3,12 @@ package hojatrabajo3;
 /**
  * @author Robert Sedgewick and Kevin Wayne
  * Codigo extraidp de http://algs4.cs.princeton.edu/14analysis/Mergesort.java.html
- *
  */
+
+/**
+ * Codigo usado por David Soto y Jose Cifuentes 
+ */
+
 public class MergeSort{
 	
     private static int[] merge(int[] a, int[] b) {

@@ -1,13 +1,15 @@
 package hojatrabajo3;
 
 /**
- * 
+ * Referencia: 
+ * @author Duane A. Bailey 
+ * Data Structures in Java for the Principled Programmer
  */
 
 /**
- * @author David Soto y Jose Cifuentes
- *
+ * Codigo usado por: David Soto y Jose Cifuentes
  */
+
 public class GnomeSort {
 	
     public static int[] gnomeSort(int[] nums){ //takes unsorted array, returns sorted

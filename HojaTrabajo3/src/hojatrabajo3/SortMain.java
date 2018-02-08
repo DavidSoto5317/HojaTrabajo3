@@ -12,7 +12,7 @@ import java.io.IOException;
 
 /**
  *
- * @author jose
+ * @author David Soto y Jose Cifuentes
  */
 public class SortMain 
 {
