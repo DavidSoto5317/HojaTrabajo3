@@ -56,8 +56,6 @@ public class SortMain
         copia2 = arreglo;
         int [] copia3 = new int[19999];
         copia3 = arreglo;
-        int [] copia4 = new int[19999];
-        copia4 = arreglo;
         
         //Aplcar los metodos
         //GnomeSort
@@ -69,12 +67,7 @@ public class SortMain
         sorter.sort(copia1);
         //RadixSort
         RadixSort.radixsort(copia2,3000);
-        //SelectionSort
-        
-        
-         
-         
-         
+        //SelectionSort 
          
          
      }

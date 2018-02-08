@@ -13,11 +13,11 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- *
- * @author David
+ * @author David Soto y Jose Cifunetes
  */
 public class MergeSortTest {
-	private int [] arrayTest = {1,5,6,3,9,7,2};
+    private int [] arrayTest = {1,5,6,3,9,7,2};
+    
     @Test
     public void PruebaSort(){
         MergeSort.mergesort(arrayTest);

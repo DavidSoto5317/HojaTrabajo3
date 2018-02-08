@@ -9,6 +9,9 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+/**
+ * @author David Soto y Jose Cifunetes
+ */
 public class GnomeSortTest {
 	
     private int [] arrayGnome = {3,8,7,5,4,9};
