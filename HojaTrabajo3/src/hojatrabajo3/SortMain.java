@@ -19,8 +19,8 @@ public class SortMain
     
      public static void main(String[] args) throws FileNotFoundException, IOException 
      {
-         int[] arreglo = new int[19999];
-         String conten; //Variable que va a recibir el contenido de cada linea del texto
+        int[] arreglo = new int[19999];
+        String conten; //Variable que va a recibir el contenido de cada linea del texto
         try{
         //Creamos un archivo FileReader que obtiene lo que tenga el archivo
             //FileReader lector=new FileReader("C:\\Users\\uriel\\Desktop\\UVG\\Algoritmos y Estruct. Datos\\Hojas de Trabajo\\HT3\\numeros.txt");
@@ -58,9 +58,20 @@ public class SortMain
         copia3 = arreglo;
         int [] copia4 = new int[19999];
         copia4 = arreglo;
+        
         //Aplcar los metodos
-        MergeSort.mergesort(copia);
+        //GnomeSort
         GnomeSort.gnomeSort(arreglo);
+        //MergeSort
+        MergeSort.mergesort(copia);
+        //QuickSort
+        QuickSort sorter = new QuickSort();
+        sorter.sort(copia1);
+        //RadixSort
+        RadixSort.radixsort(copia2,3000);
+        //SelectionSort
+        
+        
          
          
          
