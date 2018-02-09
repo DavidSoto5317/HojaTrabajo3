@@ -68,8 +68,8 @@ public class SortMain
         //RadixSort
         RadixSort.radixsort(copia2,3000);
         //SelectionSort 
-         
-         
+//        SelectionSort.selectionSort(copia3);
+        
      }
     
 }
