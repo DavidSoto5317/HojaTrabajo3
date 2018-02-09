@@ -19,12 +19,13 @@ public class SortMain
     
      public static void main(String[] args) throws FileNotFoundException, IOException 
      {
-        int[] arreglo = new int[19999];
+        int cantidad = 500;
+        int[] arreglo = new int[cantidad];
         String conten; //Variable que va a recibir el contenido de cada linea del texto
         try{
         //Creamos un archivo FileReader que obtiene lo que tenga el archivo
-            //FileReader lector=new FileReader("C:\\Users\\uriel\\Desktop\\UVG\\Algoritmos y Estruct. Datos\\Hojas de Trabajo\\HT3\\numeros.txt");
-            FileReader lector=new FileReader("C:\\Users\\jose\\Desktop\\DISEÑO\\TRABAJOS\\UVG\\3er Semestre\\Estructura de Datos\\HT3\\HojaTrabajo3\\HojaTrabajo3\\src\\hojatrabajo3\\numeros.txt");
+            FileReader lector=new FileReader("C:\\Users\\uriel\\Desktop\\UVG\\Algoritmos y Estruct. Datos\\Hojas de Trabajo\\HT3\\numeros.txt");
+            //FileReader lector=new FileReader("C:\\Users\\jose\\Desktop\\DISEÑO\\TRABAJOS\\UVG\\3er Semestre\\Estructura de Datos\\HT3\\HojaTrabajo3\\HojaTrabajo3\\src\\hojatrabajo3\\numeros.txt");
             //El contenido de lector se guarda en un BufferedReader
             BufferedReader contenido=new BufferedReader(lector);
             int contador = 0;
@@ -45,28 +46,32 @@ public class SortMain
             System.out.println("Error al leer");
         }
         //COPIAS DEL ARREGLO DESORDENADO PARA PODER PROBAR CON CADA SORT
-        int [] copia = new int[19999];
+        int [] copia = new int[cantidad];
         copia = arreglo;
-        int [] copia1 = new int[19999];
+        int [] copia1 = new int[cantidad];
         copia1 = arreglo;
-        int [] copia2 = new int[19999];
+        int [] copia2 = new int[cantidad];
         copia2 = arreglo;
-        int [] copia3 = new int[19999];
+        int [] copia3 = new int[cantidad];
         copia3 = arreglo;
-        
+        for(int i=0;i<copia.length;i++){
+            System.out.println(arreglo[i]);
+        } 
         //Aplcar los metodos
         //GnomeSort
-        arreglo=GnomeSort.gnomeSort(arreglo);
+        GnomeSort.gnomeSort(arreglo);
                  
         //MergeSort        
-        copia=MergeSort.mergesort(copia);
-        
+        MergeSort.mergesort(copia);
+        for(int i=0;i<copia.length;i++){
+            System.out.println(arreglo[i]);
+        }        
         //QuickSort
         QuickSort sorter = new QuickSort();
          sorter.sort(copia3);         
         
         //RadixSort
-        RadixSort.radixsort(copia2,3000);
+        RadixSort.radixsort(copia2,cantidad);
         
         //burbuja
         BurbujaSort burb=new BurbujaSort();
