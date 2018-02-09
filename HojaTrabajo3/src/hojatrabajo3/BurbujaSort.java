@@ -9,22 +9,24 @@ package hojatrabajo3;
  *
  * @author David
  */
-public class SelectionSort {
-    public static void selectionSort (Comparable[] list)
+public class BurbujaSort 
+{
+    
+    public int[] burbuja(int [] A)
     {
-        int min;
-        Comparable temp;
-
-        for (int index = 0; index < list.length-1; index++)
-        {
-            min = index;
-            for (int scan = index+1; scan < list.length; scan++)
-                if (list[scan].compareTo(list[min]) < 0)
-                    min = scan;
-        // Swap the values
-        temp = list[min];
-        list[min] = list[index];
-        list[index] = temp;
-        }
+         int i, j, aux;
+         for(i=0;i<A.length-1;i++)
+              for(j=0;j<A.length-i-1;j++)
+                   if(A[j+1]<A[j]){
+                      aux=A[j+1];
+                      A[j+1]=A[j];
+                      A[j]=aux;
+                   }
+    return A;
     }
+    
+    
+    
+    
+    
 }

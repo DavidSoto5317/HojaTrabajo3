@@ -37,10 +37,7 @@ public class SortMain
                 contador = contador + 1;   
             }
             
-            //prueba para ver sin se guardan con exito             
-            for (int i = 0; i <arreglo.length; i++) {
-                System.out.println(arreglo[i]);
-            }
+            
         }
         //Si se causa un error al leer cae aqui
         catch(Exception e)
@@ -59,16 +56,21 @@ public class SortMain
         
         //Aplcar los metodos
         //GnomeSort
-        GnomeSort.gnomeSort(arreglo);
-        //MergeSort
-        MergeSort.mergesort(copia);
+        arreglo=GnomeSort.gnomeSort(arreglo);
+                 
+        //MergeSort        
+        copia=MergeSort.mergesort(copia);
+        
         //QuickSort
         QuickSort sorter = new QuickSort();
-        sorter.sort(copia1);
+         sorter.sort(copia3);         
+        
         //RadixSort
         RadixSort.radixsort(copia2,3000);
-        //SelectionSort 
-//        SelectionSort.selectionSort(copia3);
+        
+        //burbuja
+        BurbujaSort burb=new BurbujaSort();
+        burb.burbuja(copia3);
         
      }
     

@@ -26,10 +26,12 @@ public class HojaTrabajo3 {
             BufferedWriter bw = new BufferedWriter(escribir);
             bw.write("");
             
-            for(int i = 0; i < 19999; i++){
-                int aleatorio = (int)(Math.random()*1000);
+            int numero=500;
+            for(int i = 0; i < numero; i++){
+                int aleatorio = (int)(Math.random()*numero);
                 escribir.write(String.valueOf(aleatorio));
                 escribir.write("\r\n");
+                System.out.print(aleatorio+"-");
             }
             escribir.close();
         }catch(Exception e){
