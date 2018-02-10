@@ -20,18 +20,18 @@ public class HojaTrabajo3 {
         // TODO code application logic here
         try{
             
-            File archivo = new File("C:\\Users\\uriel\\Desktop\\UVG\\Algoritmos y Estruct. Datos\\Hojas de Trabajo\\HT3\\numeros.txt");
-            //File archivo = new File("C:\\Users\\jose\\Desktop\\DISEÑO\\TRABAJOS\\UVG\\3er Semestre\\Estructura de Datos\\HT3\\HojaTrabajo3\\HojaTrabajo3\\src\\hojatrabajo3\\numeros.txt");
+            //File archivo = new File("./numeros.txt");
+            File archivo = new File("C:\\Users\\jose\\Desktop\\DISEÑO\\TRABAJOS\\UVG\\3er Semestre\\Estructura de Datos\\HT3\\HojaTrabajo3\\HojaTrabajo3\\src\\hojatrabajo3\\numeros.txt");
             FileWriter escribir = new FileWriter (archivo);
             BufferedWriter bw = new BufferedWriter(escribir);
             bw.write("");
             
-            int numero=500;
+            int numero=10;
             for(int i = 0; i < numero; i++){
-                int aleatorio = (int)(Math.random()*numero);
-                escribir.write(String.valueOf(aleatorio));
+                int aleatorio = (int)(Math.random()*3000);
+                escribir.write(String.valueOf(i));
                 escribir.write("\r\n");
-                System.out.print(aleatorio+"-");
+                System.out.print(i+"-");
             }
             escribir.close();
         }catch(Exception e){

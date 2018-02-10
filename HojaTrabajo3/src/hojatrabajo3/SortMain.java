@@ -19,13 +19,13 @@ public class SortMain
     
      public static void main(String[] args) throws FileNotFoundException, IOException 
      {
-        int cantidad = 500;
+        int cantidad = 10;
         int[] arreglo = new int[cantidad];
         String conten; //Variable que va a recibir el contenido de cada linea del texto
         try{
         //Creamos un archivo FileReader que obtiene lo que tenga el archivo
-            FileReader lector=new FileReader("C:\\Users\\uriel\\Desktop\\UVG\\Algoritmos y Estruct. Datos\\Hojas de Trabajo\\HT3\\numeros.txt");
-            //FileReader lector=new FileReader("C:\\Users\\jose\\Desktop\\DISEÑO\\TRABAJOS\\UVG\\3er Semestre\\Estructura de Datos\\HT3\\HojaTrabajo3\\HojaTrabajo3\\src\\hojatrabajo3\\numeros.txt");
+            //FileReader lector=new FileReader("./numeros.txt");
+            FileReader lector=new FileReader("C:\\Users\\jose\\Desktop\\DISEÑO\\TRABAJOS\\UVG\\3er Semestre\\Estructura de Datos\\HT3\\HojaTrabajo3\\HojaTrabajo3\\src\\hojatrabajo3\\numeros.txt");
             //El contenido de lector se guarda en un BufferedReader
             BufferedReader contenido=new BufferedReader(lector);
             int contador = 0;
@@ -54,9 +54,7 @@ public class SortMain
         copia2 = arreglo;
         int [] copia3 = new int[cantidad];
         copia3 = arreglo;
-        for(int i=0;i<copia.length;i++){
-            System.out.println(arreglo[i]);
-        } 
+        
         //Aplcar los metodos
         //GnomeSort
         GnomeSort.gnomeSort(arreglo);
