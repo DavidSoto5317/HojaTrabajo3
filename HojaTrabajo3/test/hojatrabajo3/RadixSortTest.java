@@ -1,7 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+/**
+ * @author Jose Cifuentes
+ * @author David Soto
+ * @version 09.02.2018
  */
 package hojatrabajo3;
 
@@ -12,10 +12,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-/**
- *
- * @author David
- */
+
 public class RadixSortTest {
     /**
      * Test of getMax method, of class RadixSort.

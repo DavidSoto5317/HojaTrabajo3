@@ -1,8 +1,9 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+/**
+ * @author Jose Cifuentes
+ * @author David Soto
+ * @version 09.02.2018
  */
+
 package hojatrabajo3;
 
 import java.io.BufferedReader;
@@ -10,10 +11,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
-/**
- *
- * @author David Soto y Jose Cifuentes
- */
+
 public class SortMain 
 {
     
@@ -24,8 +22,8 @@ public class SortMain
         String conten; //Variable que va a recibir el contenido de cada linea del texto
         try{
         //Creamos un archivo FileReader que obtiene lo que tenga el archivo
-            //FileReader lector=new FileReader("./numeros.txt");
-            FileReader lector=new FileReader("C:\\Users\\jose\\Desktop\\DISEÑO\\TRABAJOS\\UVG\\3er Semestre\\Estructura de Datos\\HT3\\HojaTrabajo3\\HojaTrabajo3\\src\\hojatrabajo3\\numeros.txt");
+            FileReader lector=new FileReader("./numeros.txt");
+            //FileReader lector=new FileReader("C:\\Users\\jose\\Desktop\\DISEÑO\\TRABAJOS\\UVG\\3er Semestre\\Estructura de Datos\\HT3\\HojaTrabajo3\\HojaTrabajo3\\src\\hojatrabajo3\\numeros.txt");
             //El contenido de lector se guarda en un BufferedReader
             BufferedReader contenido=new BufferedReader(lector);
             int contador = 0;

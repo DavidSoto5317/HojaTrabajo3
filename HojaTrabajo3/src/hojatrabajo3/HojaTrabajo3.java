@@ -1,14 +1,11 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+/**
+ * @author Jose Cifuentes
+ * @author David Soto
+ * @version 09.02.2018
  */
 package hojatrabajo3;
 
-/**
- *
- * @author David Soto y Jose Cifuntes
- */
+
 import java.io.*;
 
 public class HojaTrabajo3 {
@@ -20,8 +17,8 @@ public class HojaTrabajo3 {
         // TODO code application logic here
         try{
             
-            //File archivo = new File("./numeros.txt");
-            File archivo = new File("C:\\Users\\jose\\Desktop\\DISEÑO\\TRABAJOS\\UVG\\3er Semestre\\Estructura de Datos\\HT3\\HojaTrabajo3\\HojaTrabajo3\\src\\hojatrabajo3\\numeros.txt");
+            File archivo = new File("./numeros.txt");
+            //File archivo = new File("C:\\Users\\jose\\Desktop\\DISEÑO\\TRABAJOS\\UVG\\3er Semestre\\Estructura de Datos\\HT3\\HojaTrabajo3\\HojaTrabajo3\\src\\hojatrabajo3\\numeros.txt");
             FileWriter escribir = new FileWriter (archivo);
             BufferedWriter bw = new BufferedWriter(escribir);
             bw.write("");
